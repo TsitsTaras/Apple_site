@@ -1,16 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { IphonePageComponent } from './iphone-page/iphone-page.component';
+import { MacPageComponent } from './mac-page/mac-page.component';
+import { AppleWatchPageComponent } from './apple-watch-page/apple-watch-page.component';
+import { AirpodsPageComponent } from './airpods-page/airpods-page.component';
+import { IpadPageComponent } from './ipad-page/ipad-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IphonePageComponent,
+    MacPageComponent,
+    AppleWatchPageComponent,
+    AirpodsPageComponent,
+    IpadPageComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ],
 })
-export class AppModule { }
+export class AppModule {}

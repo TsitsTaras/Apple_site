@@ -1,0 +1,21 @@
+<div class="header">
+ <ul class="header-button">
+    <li routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="'/'">iPhone</a>
+    </li>
+    <li routerLinkActive="active">
+        <a [routerLink]="'/mac'">Mac</a>
+    </li>
+    <li routerLinkActive="active">
+        <a [routerLink]="'/apple_watch'">Apple Watch</a>
+    </li>
+    <li routerLinkActive="active">
+        <a [routerLink]="'/ipad'">iPad</a>
+    </li>
+    <li routerLinkActive="active">
+        <a [routerLink]="'/airpods'">Airpods</a>
+    </li>
+ </ul>
+</div>
+<router-outlet></router-outlet>

@@ -10,7 +10,7 @@ import { MacPageComponent } from "./mac-page/mac-page.component";
 const appRoutes: Routes = [
     {path:'',component:IphonePageComponent},
     {path:'mac',component:MacPageComponent},
-    { path: 'apple_watch', component: AppleWatchPageComponent },
+    {path: 'apple_watch', component: AppleWatchPageComponent },
     {path:'ipad',component:IpadPageComponent},
     {path:'airpods',component:AirpodsPageComponent}
     

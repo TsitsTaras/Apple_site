@@ -1,0 +1,63 @@
+.conteiner-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 19px;
+}
+.price {
+  margin: 0 0 15px 0;
+  color: #ff5c43;
+  font-size: 23px;
+  font-weight: bold;
+}
+button {
+  padding: 12px;
+  border: none;
+}
+.midnight {
+  background: #161d24;
+}
+.srarlight {
+  background: #f9f5f0;
+}
+.pink {
+  background: #f9dcd6;
+}
+.blue {
+  background: #1357be;
+}
+.red {
+  background: #de0000;
+}
+.graphite {
+  background: #46454c;
+}
+.silver {
+  background: #c0c0c0;
+}
+.gold {
+  background: #ead39b;
+}
+.sierra-blue {
+  background: #87c0ee;
+}
+.slpine-green {
+  background: #005c4c;
+}
+.black {
+  background: #000;
+}
+.white {
+  background: #fffaf0;
+}
+.green {
+  background: #bae6a2;
+}
+.purple {
+  background: #b19cd9;
+}
+.active {
+  border: 2px solid #fd7e14;
+}

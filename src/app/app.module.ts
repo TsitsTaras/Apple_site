@@ -8,6 +8,8 @@ import { MacPageComponent } from './mac-page/mac-page.component';
 import { AppleWatchPageComponent } from './apple-watch-page/apple-watch-page.component';
 import { AirpodsPageComponent } from './airpods-page/airpods-page.component';
 import { IpadPageComponent } from './ipad-page/ipad-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { IphoneCardComponent } from './iphone-page/iphone-card/iphone-card.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,10 @@ import { IpadPageComponent } from './ipad-page/ipad-page.component';
     AppleWatchPageComponent,
     AirpodsPageComponent,
     IpadPageComponent,
-
+    IphoneCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [
-    AppComponent
-  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

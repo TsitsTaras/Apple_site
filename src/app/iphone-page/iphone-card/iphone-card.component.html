@@ -1,0 +1,13 @@
+<div class="conteiner-product">
+  <img [src]="iphone.img" alt="" />
+  <p class="title">{{ iphone.title }}({{ iphone.params.memory[0] }})</p>
+  <p class="price">{{ iphone.params.price[0] }}</p>
+  <div>
+    <button
+      *ngFor="let color of iphone.params.color; let i = index"
+      class="{{ iphoneColorsMap[color] }}"
+      [class.active]="i === activeIndex"
+      (click)="onActiveColor(i)"
+    ></button>
+  </div>
+</div>

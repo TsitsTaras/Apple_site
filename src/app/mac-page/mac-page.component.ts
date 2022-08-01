@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-mac-page',
   templateUrl: './mac-page.component.html',
-  styleUrls: ['./mac-page.component.css']
+  styleUrls: ['./mac-page.component.scss'],
 })
 export class MacPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,1 +1,6 @@
-<p>iphone-page works!</p>
+<h2>iPhone</h2>
+<div class="conteiner">
+  <div *ngFor="let iphone of iphoneList">
+    <app-iphone-card [iphone]="iphone"></app-iphone-card>
+  </div>
+</div>

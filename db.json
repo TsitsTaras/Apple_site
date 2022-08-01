@@ -1,0 +1,52 @@
+{
+  "iphones": [
+    {
+      "id": 1,
+      "title": "Apple iPhone 13",
+      "img": "https://hotline.ua/img/tx/298/298912024_s265.jpg",
+      "params": {
+        "color": ["midnight", "starlight", "pink", "blue", "red"],
+        "memory": ["128 гб", "256Гб", "512Гб"],
+        "price": ["850$", "930$", "1045$"],
+        "processor": "Apple A15 Bionic",
+        "size": "6,1''"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple iPhone 13 Pro Max",
+      "img": "https://hotline.ua/img/tx/298/298912183_s265.jpg",
+      "params": {
+        "color": ["graphite", "silver", "gold", "sierraBlue", "slpineGreen"],
+        "memory": ["128 Гб", "256Гб", "512Гб", "1Тб"],
+        "price": ["1145$", "1265$", "1519$", "1639$"],
+        "processor": "Apple A15 Bionic",
+        "size": "6,7''"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple iPhone 12 Mini",
+      "img": "https://hotline.ua/img/tx/337/337300659_s265.jpg",
+      "params": {
+        "color": ["black", "white", "blue", "green", "red", "purple"],
+        "memory": ["64Гб", "128 Гб", "256Гб"],
+        "price": ["639$", "699$", "949$"],
+        "processor": "Apple A14 Bionic",
+        "size": "5,4''"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apple iPhone 12",
+      "img": "https://hotline.ua/img/tx/334/334422333_s265.jpg",
+      "params": {
+        "color": ["black", "white", "blue", "green", "red", "purple"],
+        "memory": ["64Гб", "128 Гб", "256Гб"],
+        "price": ["669$", "809$", "899$"],
+        "processor": "Apple A14 Bionic",
+        "size": "6,1''"
+      }
+    }
+  ]
+}

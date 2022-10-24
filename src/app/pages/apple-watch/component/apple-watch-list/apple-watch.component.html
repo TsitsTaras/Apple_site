@@ -1,0 +1,24 @@
+<h2>Apple Watch</h2>
+<div class="conteiner">
+  <div class="filter">
+    <app-filter
+      (changes)="onColorChange($event)"
+      [label]="'Color'"
+      [list]="appleWatchColorsFilter"
+    ></app-filter>
+    <app-filter
+      (changes)="onSizeChange($event)"
+      [label]="'Size'"
+      [list]="appleWatchSizeFilter"
+    ></app-filter>
+  </div>
+  <div
+    *ngFor="
+      let appleWatch of appleWatchList
+        | filterAppleWatch: filterColors:filterSize
+    "
+    class="apple-watch-card"
+  >
+    <app-apple-watch-card [appleWatch]="appleWatch"></app-apple-watch-card>
+  </div>
+</div>

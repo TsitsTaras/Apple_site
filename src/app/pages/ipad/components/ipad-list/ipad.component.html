@@ -1,0 +1,21 @@
+<h2>Ipad</h2>
+<div class="conteiner">
+  <div class="filter">
+    <app-filter
+      (changes)="onColorChange($event)"
+      [label]="'Color'"
+      [list]="ipadColorsFilter"
+    ></app-filter>
+    <app-filter
+      (changes)="onMemoryChange($event)"
+      [label]="'Memory'"
+      [list]="ipadMemoryFilter"
+    ></app-filter>
+  </div>
+  <div
+    *ngFor="let ipad of ipadList | filterIpad: filterColors:filterMemory"
+    class="ipad-card"
+  >
+    <app-ipad-card [ipad]="ipad"></app-ipad-card>
+  </div>
+</div>

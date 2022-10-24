@@ -1,0 +1,105 @@
+<div class="conteiner">
+  <img [src]="appleWatchDetails.img" alt="" />
+  <div>
+    <h3 class="title">
+      {{ appleWatchDetails.title }} {{ sizeName }}
+      {{ colorName }}
+    </h3>
+    <div class="review">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/218/218745.png"
+        class="stars"
+      />
+      <p class="review-descriptions">в наявності</p>
+    </div>
+    <h3>Колір</h3>
+    <div class="colors">
+      <div
+        *ngFor="let color of appleWatchDetails.params.color; let i = index"
+        [class.active]="i === activeIndex"
+        (click)="onActiveColor(i)"
+        class="color"
+      >
+        <input type="checkbox" />
+        <button
+          class="{{ appleWatchColorsMap[color] }}"
+          class="button-colors"
+        ></button>
+        {{ parsColorToString[color] }}
+      </div>
+    </div>
+    <h3>Розмір корпусу</h3>
+    <div class="sizes">
+      <div
+        *ngFor="let size of appleWatchDetails.params.size; let i = index"
+        [class.active]="i === activesIndex"
+        (click)="onActiveSize(i)"
+        class="size"
+      >
+        <input type="checkbox" />
+        {{ parsSizeToString[size] }}
+      </div>
+    </div>
+  </div>
+  <div class="informations">
+    <div informations-params-delivery>
+      <div class="params">
+        <div class="params-details">
+          <img
+            src="https://img.icons8.com/ios/2x/processor.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Процесор</p>
+            <h4>{{ appleWatchDetails.params.processor }}</h4>
+          </span>
+        </div>
+        <div class="params-details">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/5103/5103387.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Зв'язок</p>
+            <h4>{{ appleWatchDetails.params.communication }}</h4>
+          </span>
+        </div>
+      </div>
+      <div class="delivery">
+        <h5>Способи доставки</h5>
+        <ul>
+          <li>
+            <p class="delivery-title">Самовивіз з магазину</p>
+            <p class="delivery-free">безкоштовно</p>
+          </li>
+
+          <hr />
+          <li>
+            <p class="delivery-title">Кур'єрська доставка по Львову</p>
+            <p class="delivery-free">безкоштовно</p>
+          </li>
+          <hr />
+          <li>
+            <p class="delivery-title">Відділення Нової Пошти</p>
+            <p class="delivery-price">від 50 грн.</p>
+          </li>
+          <hr />
+          <li>
+            <p class="delivery-title">Кур'єрська доставка Нова Пошта</p>
+            <p class="delivery-price">від 50 грн.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="informations-purchase">
+      <h3>Всього:</h3>
+      <div class="purchase">
+        <div class="price">
+          {{ appleWatchDetails.params.price[0] }}
+        </div>
+        <a href="" class="purchase-button_1">Купити</a>
+        <a href="" class="purchase-button_2">Купити в один клік</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { IphonePageComponent } from './iphone-page/iphone-page.component';
-import { MacPageComponent } from './mac-page/mac-page.component';
-import { AppleWatchPageComponent } from './apple-watch-page/apple-watch-page.component';
-import { AirpodsPageComponent } from './airpods-page/airpods-page.component';
-import { IpadPageComponent } from './ipad-page/ipad-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { IphoneCardComponent } from './iphone-page/iphone-card/iphone-card.component';
+import { AppRoutingModule } from './app-routing.module';
 
+import { IpadModule } from './pages/ipad/ipad.module';
+import { AirpodsModule } from './pages/airpods/airpods.module';
+import { IphoneModule } from './pages/iphone/iphone.module';
+import { MacModule } from './pages/mac/mac.module';
+import { AppleWatchModule } from './pages/apple-watch/apple-watch.module';
+import { CreateIphoneModule } from './pages/iphone-create/create-iphone.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  declarations: [
-    AppComponent,
-    IphonePageComponent,
-    MacPageComponent,
-    AppleWatchPageComponent,
-    AirpodsPageComponent,
-    IpadPageComponent,
-    IphoneCardComponent,
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    IphoneModule,
+    MacModule,
+    AirpodsModule,
+    AppleWatchModule,
+    IpadModule,
+    CreateIphoneModule,
+    BrowserAnimationsModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

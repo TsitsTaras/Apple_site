@@ -1,0 +1,9 @@
+<div class="conteiner-product">
+  <a [routerLink]="'/apple_watch/' + appleWatch.id" class="apple-watch-routing">
+    <img [src]="appleWatch.img" alt="" />
+    <p class="title">{{ appleWatch.title }}</p>
+    <p class="params">{{ appleWatch.params.communication }} {{ colorName }}</p>
+  </a>
+  <p class="price">{{ appleWatch.params.price[0] }}</p>
+  <div></div>
+</div>

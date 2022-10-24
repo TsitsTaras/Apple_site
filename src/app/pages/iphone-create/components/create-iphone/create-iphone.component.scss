@@ -1,0 +1,140 @@
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: start;
+}
+.iphone-img {
+  margin: 40px 40px 0 40px;
+  width: 300px;
+  height: 300px;
+}
+.images-iphone-img {
+  width: 300px;
+  margin: 0 0 0 40px;
+}
+.title {
+  padding: 0;
+  margin: 40px 0 0 40px;
+}
+.title-iphone {
+  margin: 20px 0 20px 40px;
+}
+h3 {
+  margin: 0 20px 0 0;
+  font-weight: bold;
+}
+
+.colors,
+.memorys {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 40px;
+}
+.informations-purchase {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 40px;
+}
+
+.informations {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.params {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #c0c0c0;
+  margin: 0 0 0 40px;
+  max-width: 400px;
+  width: 100%;
+  justify-content: space-between;
+}
+.params-details-icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 10px 0 0;
+}
+.params-details {
+  display: flex;
+  margin: 20px 5px;
+  min-width: 180px;
+}
+.params-details-title {
+  margin: 0;
+  opacity: 50%;
+}
+.deliverys {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px;
+}
+.delivery {
+  display: flex;
+}
+.params-select {
+  margin: 10px 0 0 0;
+  width: 130px;
+  font-size: 12px;
+}
+h5 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+ul {
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-title {
+  margin: 0 5px;
+}
+
+.delivery-free {
+  margin: 0;
+  color: #88e855;
+}
+.delivery-price {
+  margin: 0;
+}
+.color-item {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  margin: 5px;
+}
+.memory-item {
+  opacity: 0.7;
+  margin: 5px;
+  padding: 5px;
+}
+.color-item--active,
+.memory-item--active {
+  opacity: 1;
+  border: 1px solid #fd7e14;
+}
+
+.blue {
+  background: #1357be;
+}
+.red {
+  background: #de0000;
+}
+.silver {
+  background: #c0c0c0;
+}
+.black {
+  background: #000;
+}
+.white {
+  background: #fffaf0;
+}
+.green {
+  background: #bae6a2;
+}

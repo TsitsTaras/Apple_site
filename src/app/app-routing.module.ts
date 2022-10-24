@@ -1,26 +1,38 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AirpodsPageComponent } from "./airpods-page/airpods-page.component";
-import { AppleWatchPageComponent } from "./apple-watch-page/apple-watch-page.component";
-import { IpadPageComponent } from "./ipad-page/ipad-page.component";
-import { IphonePageComponent } from "./iphone-page/iphone-page.component";
-import { MacPageComponent } from "./mac-page/mac-page.component";
-
 
 const appRoutes: Routes = [
-    {path:'',component:IphonePageComponent},
-    {path:'mac',component:MacPageComponent},
-    {path: 'apple_watch', component: AppleWatchPageComponent },
-    {path:'ipad',component:IpadPageComponent},
-    {path:'airpods',component:AirpodsPageComponent}
-    
+  {
+    path: 'iphone',
+    loadChildren: () =>
+      import('./pages/iphone/iphone.module').then((m) => m.IphoneModule),
+  },
+  {
+    path: 'mac',
+    loadChildren: () =>
+      import('./pages/mac/mac.module').then((m) => m.MacModule),
+  },
+  {
+    path: 'apple_watch',
+    loadChildren: () =>
+      import('./pages/apple-watch/apple-watch.module').then(
+        (m) => m.AppleWatchModule
+      ),
+  },
+  {
+    path: 'ipad',
+    loadChildren: () =>
+      import('./pages/ipad/ipad.module').then((m) => m.IpadModule),
+  },
+  {
+    path: 'airpods',
+    loadChildren: () =>
+      import('./pages/airpods/airpods.module').then((m) => m.AirpodsModule),
+  },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
-    exports:[RouterModule]
-    
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule{
-
-}
+export class AppRoutingModule {}

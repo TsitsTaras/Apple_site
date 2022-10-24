@@ -1,0 +1,153 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="conteiner">
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmmitP26ykotkflM-sMGarufQ26X0yzRT3Wo5wtCPTbi5en1DynGWh8zOc6hp2cjbjeZ0&usqp=CAU"
+    class="iphone-img"
+  />
+  <div>
+    <h3 class="title">Введіть назву</h3>
+    <mat-form-field class="title-iphone">
+      <mat-label>Select from the list</mat-label>
+      <input matInput formControlName="title" type="text" />
+    </mat-form-field>
+    <div class="colors">
+      <h3>Оберіть колір:</h3>
+      <div
+        class="color-item {{ colorsMap[color] }}"
+        *ngFor="let color of colorsList"
+        (click)="onActiveColors(color)"
+        [ngClass]="{ 'color-item--active': activeColors.has(color) }"
+      ></div>
+    </div>
+    <div class="memorys">
+      <h3>Оберіть об'єм пам'яті:</h3>
+      <div
+        class="memory-item {{ memorysMap[memory] }}"
+        *ngFor="let memory of memorysList"
+        (click)="onActiveMemorys(memory)"
+        [ngClass]="{ 'memory-item--active': activeMemorys.has(memory) }"
+      >
+        {{ memory }}
+      </div>
+    </div>
+    <div class="informations-purchase">
+      <h3>Total price:</h3>
+      <button type="submit" mat-raised-button color="warn">Save</button>
+    </div>
+  </div>
+  <div class="informations">
+    <div informations-params-delivery>
+      <div class="params">
+        <div class="params-details">
+          <img
+            src="https://img.icons8.com/ios/344/smartphone--v2.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Діагональ екрану</p>
+            <mat-form-field class="params-select">
+              <mat-label>Select from the list</mat-label>
+              <mat-select formControlName="size">
+                <mat-option *ngFor="let size of sizeConfigMap" [value]="size">
+                  {{ size }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div class="params-details">
+          <img
+            src="https://img.icons8.com/ios/2x/processor.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Процесор</p>
+            <mat-form-field class="params-select">
+              <mat-label>Select from the list</mat-label>
+              <mat-select formControlName="processor">
+                <mat-option
+                  *ngFor="let processor of processorConfigMap"
+                  [value]="processor"
+                >
+                  {{ processor }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div class="params-details">
+          <img
+            src="https://img.icons8.com/ios/2x/rotate-camera.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Фронтальна камера</p>
+            <mat-form-field class="params-select">
+              <mat-label>Select from the list</mat-label>
+              <mat-select formControlName="frontCamera">
+                <mat-option
+                  *ngFor="let frontCamera of frontCameraConfigMap"
+                  [value]="frontCamera"
+                >
+                  {{ frontCamera }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+        <div class="params-details">
+          <img
+            src="https://img.icons8.com/material-outlined/2x/camera.png"
+            class="params-details-icon"
+          />
+          <span>
+            <p class="params-details-title">Основна камера</p>
+            <mat-form-field class="params-select">
+              <mat-label>Select from the list</mat-label>
+              <mat-select formControlName="mainCamera">
+                <mat-option
+                  *ngFor="let camera of mainCameraConfigMap"
+                  [value]="camera"
+                >
+                  {{ camera }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </span>
+        </div>
+      </div>
+      <!-- <div class="deliverys">
+        <h5>Оберіть спосіб доставки</h5>
+        <ul>
+          <li>
+            <mat-checkbox class="delivery">
+              <p class="delivery-title">Самовивіз з магазину</p>
+            </mat-checkbox>
+            <p class="delivery-free">безкоштовно</p>
+          </li>
+          <hr />
+          <li>
+            <mat-checkbox class="delivery">
+              <p class="delivery-title">Кур'єрська доставка по Львову</p>
+            </mat-checkbox>
+            <p class="delivery-free">безкоштовно</p>
+          </li>
+          <hr />
+          <li>
+            <mat-checkbox class="delivery">
+              <p class="delivery-title">Відділення Нової Пошти</p>
+            </mat-checkbox>
+            <p class="delivery-price">від 50 грн.</p>
+          </li>
+          <hr />
+          <li>
+            <mat-checkbox class="delivery">
+              <p class="delivery-title">Кур'єрська доставка Нова Пошта</p>
+            </mat-checkbox>
+            <p class="delivery-price">від 50 грн.</p>
+          </li>
+        </ul>
+      </div> -->
+      
+    </div>
+  </div>
+</form>

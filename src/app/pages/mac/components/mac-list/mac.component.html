@@ -1,0 +1,23 @@
+<h2>Mac</h2>
+<div class="conteiner">
+  <div class="filter">
+    <app-filter
+      (changes)="onRamChange($event)"
+      [label]="'RAM'"
+      [list]="macRamFilter"
+    ></app-filter>
+    <app-filter
+      (changes)="onSsdChange($event)"
+      [label]="'SDD'"
+      [list]="macSsdFilter"
+    ></app-filter>
+  </div>
+  <div class="macs">
+    <div
+      *ngFor="let mac of macList | filterMac: filterRam:filterSsd"
+      class="mac-card"
+    >
+      <app-mac-card [mac]="mac"></app-mac-card>
+    </div>
+  </div>
+</div>

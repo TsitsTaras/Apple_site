@@ -1,0 +1,31 @@
+.conteiner-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #000;
+  line-height: 25px;
+}
+.params {
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+.price {
+  margin: 0 0 15px 0;
+  color: #ff5c43;
+  font-size: 20px;
+  font-weight: bold;
+}
+img {
+  width: 80%;
+  height: 80%;
+}
+.airpods-routing {
+  text-decoration: none;
+  min-height: 290px;
+}

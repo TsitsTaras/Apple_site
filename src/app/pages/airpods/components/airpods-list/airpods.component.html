@@ -1,0 +1,23 @@
+<h2>Airpods</h2>
+<div class="conteiner">
+  <div class="filter">
+    <app-filter
+      (changes)="onColorChange($event)"
+      [label]="'Color'"
+      [list]="airpodsColorsFilter"
+    ></app-filter>
+    <app-filter
+      (changes)="onManufactureChange($event)"
+      [label]="'Manufacture'"
+      [list]="airpodsManufactureFilter"
+    ></app-filter>
+  </div>
+  <div
+    *ngFor="
+      let airpods of airpodsList | filterAirpods: filterColors:filterManufacture
+    "
+    class="airpods-card"
+  >
+    <app-airpods-card [airpods]="airpods"></app-airpods-card>
+  </div>
+</div>

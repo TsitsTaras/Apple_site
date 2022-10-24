@@ -1,0 +1,165 @@
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: start;
+}
+img {
+  margin: 40px;
+  width: 25%;
+  height: 25%;
+}
+.title {
+  font-size: 33px;
+  margin: 40px 0 0 40px;
+}
+.review {
+  display: flex;
+  align-items: center;
+}
+.stars {
+  margin: 0 0 0 40px;
+  width: 6em;
+}
+.review-descriptions {
+  margin-left: 30px;
+  color: #88e855;
+}
+h3 {
+  margin: 10px 40px;
+}
+.colors,
+.memorys {
+  display: flex;
+}
+.color,
+.memory {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.button-colors {
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.purchase {
+  display: flex;
+}
+.informations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.params {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #c0c0c0;
+  margin: 0 0 0 40px;
+  max-width: 400px;
+  width: 100%;
+  justify-content: space-between;
+}
+input {
+  margin-right: 15px;
+}
+.params-details-icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 10px 0 0;
+}
+.params-details {
+  display: flex;
+  margin: 20px 5px;
+  min-width: 180px;
+}
+.params-details-title {
+  margin: 0;
+  opacity: 50%;
+}
+.delivery {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px;
+}
+h5 {
+  font-size: 18px;
+}
+h4 {
+  margin: 10px 0 0 0;
+}
+ul {
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-title {
+  margin: 0;
+}
+.delivery-free {
+  margin: 0;
+  color: #88e855;
+}
+.delivery-price {
+  margin: 0;
+}
+.purchase {
+  display: flex;
+  align-items: center;
+}
+.price {
+  margin: 20px 40px;
+  color: #ff5c43;
+  font-size: 30px;
+  font-weight: bold;
+}
+.purchase-button_1 {
+  padding: 15px 30px;
+  margin: 20px;
+  background: #fe8732;
+  border: 1px solid #fe8732;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.purchase-button_1:hover {
+  color: #000;
+  transition: 0.5s;
+}
+.purchase-button_2 {
+  padding: 15px 30px;
+  border: 1px solid #fe8732;
+  margin: 20px;
+  background: #fff;
+  color: #fe8732;
+  text-decoration: none;
+  font-weight: bold;
+}
+.purchase-button_2:hover {
+  color: #000;
+  transition: 0.5s;
+  background: #fe8732;
+}
+
+.starlight {
+  background: #f8f9ec;
+}
+.spaceGrey {
+  background: #343d46;
+}
+.silver {
+  background: #c0c0c0;
+}
+.midnight {
+  background: #181e22;
+}
+.active {
+  border: 2px solid #fd7e14;
+}

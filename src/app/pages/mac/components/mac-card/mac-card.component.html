@@ -1,0 +1,10 @@
+<div class="conteiner-product">
+  <a [routerLink]="'/mac/' + mac.id" class="mac-routing">
+    <img [src]="mac.img" alt="" />
+    <p class="title">{{ mac.title }} {{ mac.params.size }}</p>
+    <p class="params">
+      {{ colorName }} {{ mac.params.ram[0] }}/{{ mac.params.ssd[0] }}
+    </p>
+  </a>
+  <p class="price">{{ mac.params.price[0] }}</p>
+</div>

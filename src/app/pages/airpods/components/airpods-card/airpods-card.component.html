@@ -1,0 +1,9 @@
+<div class="conteiner-product">
+  <a [routerLink]="'/airpods/' + airpods.id" class="airpods-routing">
+    <img [src]="airpods.img" alt="" />
+    <p class="title">{{ airpods.title }}</p>
+    <p class="params">{{ airpods.params.manufacture }}</p>
+  </a>
+  <p class="price">{{ airpods.params.price }}</p>
+  <div></div>
+</div>

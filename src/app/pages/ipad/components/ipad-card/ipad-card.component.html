@@ -1,0 +1,9 @@
+<div class="conteiner-product">
+  <a [routerLink]="'/ipad/' + ipad.id" class="ipad-routing">
+    <img [src]="ipad.img" alt="" />
+    <p class="title">{{ ipad.title }} {{ ipad.params.size }}</p>
+    <p class="params">{{ colorName }}</p>
+  </a>
+  <p class="price">{{ ipad.params.price[0] }}</p>
+  <div></div>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <h3>{{ label }}</h3>
+  <div *ngFor="let item of list" class="filter">
+    <input type="checkbox" (change)="onChange(item.value)" />
+    {{ item.title }}
+  </div>
+</div>

@@ -5,47 +5,279 @@
       "title": "Apple iPhone 13",
       "img": "https://hotline.ua/img/tx/298/298912024_s265.jpg",
       "params": {
-        "color": ["midnight", "starlight", "pink", "blue", "red"],
-        "memory": ["128 гб", "256Гб", "512Гб"],
+        "color": [2, 4],
+        "memory": [128, 256, 512],
         "price": ["850$", "930$", "1045$"],
         "processor": "Apple A15 Bionic",
-        "size": "6,1''"
+        "size": "6,1''",
+        "frontCamera": "12MP",
+        "camera": "12MP+12MP"
       }
     },
     {
       "id": 2,
       "title": "Apple iPhone 13 Pro Max",
-      "img": "https://hotline.ua/img/tx/298/298912183_s265.jpg",
+      "img": "https://hotline.ua/img/tx/298/298912242_s265.jpg",
       "params": {
-        "color": ["graphite", "silver", "gold", "sierraBlue", "slpineGreen"],
-        "memory": ["128 Гб", "256Гб", "512Гб", "1Тб"],
+        "color": [2, 3, 6],
+        "memory": [128, 256, 512],
         "price": ["1145$", "1265$", "1519$", "1639$"],
         "processor": "Apple A15 Bionic",
-        "size": "6,7''"
+        "size": "6,7''",
+        "frontCamera": "12MP",
+        "camera": "12MP+12MP+12MP"
       }
     },
     {
       "id": 3,
       "title": "Apple iPhone 12 Mini",
-      "img": "https://hotline.ua/img/tx/337/337300659_s265.jpg",
+      "img": "https://hotline.ua/img/tx/341/341084929_s265.jpg",
       "params": {
-        "color": ["black", "white", "blue", "green", "red", "purple"],
-        "memory": ["64Гб", "128 Гб", "256Гб"],
+        "color": [1, 2, 3, 4, 5],
+        "memory": [64, 128, 256],
         "price": ["639$", "699$", "949$"],
         "processor": "Apple A14 Bionic",
-        "size": "5,4''"
+        "size": "5,4''",
+        "frontCamera": "12MP",
+        "camera": "12MP+12MP"
       }
     },
     {
       "id": 4,
       "title": "Apple iPhone 12",
-      "img": "https://hotline.ua/img/tx/334/334422333_s265.jpg",
+      "img": "https://hotline.ua/img/tx/341/341084983_s265.jpg",
       "params": {
-        "color": ["black", "white", "blue", "green", "red", "purple"],
-        "memory": ["64Гб", "128 Гб", "256Гб"],
+        "color": [1, 2, 3, 4, 5],
+        "memory": [64, 128, 256],
         "price": ["669$", "809$", "899$"],
         "processor": "Apple A14 Bionic",
-        "size": "6,1''"
+        "size": "6,1''",
+        "frontCamera": "12MP",
+        "camera": "12MP+12MP"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Apple iPhone 13 Pro Max",
+      "img": "https://hotline.ua/img/tx/298/298912242_s265.jpg",
+      "params": {
+        "color": [2, 3, 6],
+        "memory": [128, 256, 512],
+        "price": ["1145$", "1265$", "1519$", "1639$"],
+        "processor": "Apple A15 Bionic",
+        "size": "6,7''",
+        "frontCamera": "12MP",
+        "camera": "12MP+12MP+12MP"
+      }
+    }
+  ],
+  "macs": [
+    {
+      "id": 1,
+      "title": "Apple MacBook Pro",
+      "img": "https://hotline.ua/img/tx/342/342323594_s265.jpg ",
+      "params": {
+        "color": [6, 7],
+        "ram": [8, 16, 24],
+        "ssd": [256, 512],
+        "price": ["1399$", "1799$", "1619$", "2089$"],
+        "processor": [
+          "Apple M1 Pro з 8‑ядерним процесором, 14‑ядерним графічним процесором"
+        ],
+        "size": "13''"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple MacBook Pro",
+      "img": "https://hotline.ua/img/tx/302/302348312_s265.jpg",
+      "params": {
+        "color": [7, 6],
+        "ram": [16, 32],
+        "ssd": [512, 1],
+        "price": ["2039$", "2399$", "3099$", "3549$"],
+        "processor": [
+          "Apple M1 Pro з 8‑ядерним процесором, 14‑ядерним графічним процесором"
+        ],
+        "size": "14''"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple MacBook Pro",
+      "img": "https://hotline.ua/img/tx/302/302379206_s265.jpg",
+      "params": {
+        "color": [6, 7],
+        "ram": [16, 32],
+        "ssd": [512, 1],
+        "price": ["2449$", "2699$", "3599$", "3699$"],
+        "processor": [
+          "Apple M1 Pro з 8‑ядерним процесором, 14‑ядерним графічним процесором"
+        ],
+        "size": "16''"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apple MacBook Air",
+      "img": "https://hotline.ua/img/tx/342/342314473_s265.jpg",
+      "params": {
+        "color": [8, 9, 6, 7],
+        "ram": [8, 16, 24],
+        "ssd": [256, 512],
+        "price": ["1399$", "1799$"],
+        "processor": [
+          "Apple M2 | 8‑ядерний процесор | 8‑ядерний графічний процесор"
+        ],
+        "size": "13''"
+      }
+    }
+  ],
+  "appleWatchs": [
+    {
+      "id": 1,
+      "title": "Apple Watch Series 7",
+      "img": "https://hotline.ua/img/tx/339/339713690_s265.jpg ",
+      "params": {
+        "color": [8, 2, 3, 9, 1],
+        "processor": ["Apple S7"],
+        "communication": ["GPS"],
+        "price": ["375$", "425$"],
+        "size": [2, 4]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple Watch Series 7 ",
+      "img": "https://hotline.ua/img/tx/339/339713876_s265.jpg",
+      "params": {
+        "color": [9, 2, 3, 8, 1],
+        "processor": ["Apple S7"],
+        "communication": ["GPS"],
+        "price": ["375$", "425$"],
+        "size": [2, 4]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple Watch SE GPS",
+      "img": "https://hotline.ua/img/tx/237/237832200_s265.jpg",
+      "params": {
+        "color": [7, 10, 6],
+        "processor": ["Apple S5"],
+        "communication": ["GPS"],
+        "price": ["299$", "319$"],
+        "size": [1, 3]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apple Watch Series 7 GPS +",
+      "img": "https://hotline.ua/img/tx/341/341820403_s265.jpg",
+      "params": {
+        "color": [9, 2, 3, 8, 1],
+        "processor": ["Apple S7"],
+        "communication": ["GPS"],
+        "price": ["425$", "449$"],
+        "size": [1, 3]
+      }
+    }
+  ],
+  "ipads": [
+    {
+      "id": 1,
+      "title": "Apple iPad 9",
+      "img": "https://hotline.ua/img/tx/276/276572733_s265.jpg",
+      "params": {
+        "color": [7, 6],
+        "memory": [64, 256],
+        "price": ["389$", "549$"],
+        "processor": "Apple A13 Bionic",
+        "size": "10,2''",
+        "frontCamera": "12MP",
+        "camera": "8MP"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple iPad Air",
+      "img": "https://hotline.ua/img/tx/320/320774950_s265.jpg",
+      "params": {
+        "color": [2, 7, 9, 11, 12],
+        "memory": [64, 256],
+        "price": ["669$", "1049$"],
+        "processor": "Apple A15 Bionic",
+        "frontCamera": "12MP",
+        "camera": "8MP"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple iPad mini",
+      "img": "https://hotline.ua/img/tx/297/297811341_s265.jpg",
+      "params": {
+        "color": [11, 9, 7, 12],
+        "memory": [64, 256],
+        "price": ["499$", "729$"],
+        "processor": "Apple A15 Bionic",
+        "size": "8,3''",
+        "frontCamera": "12MP",
+        "camera": "12MP"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apple iPad Pro",
+      "img": "https://hotline.ua/img/tx/276/276569813_s265.jpg",
+      "params": {
+        "color": [7, 9, 11, 12],
+        "memory": [128, 256, 512, 1, 2],
+        "price": ["849$", "1279$", "1549$", "1749$", "1899$"],
+        "processor": "Apple A15 Bionic",
+        "frontCamera": "12MP",
+        "camera": "8MP"
+      }
+    }
+  ],
+  "airpods": [
+    {
+      "id": 1,
+      "title": "Apple AirPods 3 (MME73)",
+      "img": "https://hotline.ua/img/tx/302/302344469_s265.jpg",
+      "params": {
+        "manufacture": [2021],
+        "color": [5],
+        "price": ["165$"]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple AirPods 2 with Charging Case (MV7N2)",
+      "img": "https://hotline.ua/img/tx/239/239389983_s265.jpg",
+      "params": {
+        "manufacture": [2019],
+        "color": [5],
+        "price": ["119$"]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple AirPods Pro with Magsafe MLWK3",
+      "img": "https://hotline.ua/img/tx/211/211315769_s265.jpg",
+      "params": {
+        "manufacture": [2021],
+        "color": [5],
+        "price": ["195$"]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apple AirPods Max",
+      "img": "https://hotline.ua/img/tx/331/331348564_s265.jpg",
+      "params": {
+        "manufacture": [2020],
+        "color": [6, 11, 7, 3, 2],
+        "price": ["629$"]
       }
     }
   ]
